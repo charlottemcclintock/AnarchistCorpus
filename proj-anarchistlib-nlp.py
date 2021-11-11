@@ -14,7 +14,7 @@ import re
 
 # read in jsons
 jsons = []
-for f_name in glob('./*.json'): # for all jsons in directory
+for f_name in glob('./data/*.json'): # for all jsons in directory
     with open(f_name, "r") as fh: 
         file = json.loads(fh.read())
         jsons.extend(file)
@@ -47,7 +47,7 @@ top10s = tfidf_long.sort_values(by=['doc_title','tfidf'], ascending=[True,False]
 
 print(top10s)
 
-top10s.to_csv('tfidf-test.csv')
+top10s.to_csv('results/tfidf-test.csv')
 
 
 '''
