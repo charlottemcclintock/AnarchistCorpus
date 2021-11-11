@@ -129,8 +129,12 @@ dmypy.json
 .pyre/
 
 
-
-
+*.gensim
+*.pkl
 *.DS_Store
 *.csv
 *.json
+
+lda/*
+
+*.html
