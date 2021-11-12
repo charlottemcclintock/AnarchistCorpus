@@ -36,6 +36,10 @@ thank you to Rohit for teaching me!
 lib = []
 
 for i, url in enumerate(urls): 
+    # run next set for now
+    if i <= 5000: 
+        continue # before, this was break
+
     try: 
         # get page content
         page = requests.get(url)
@@ -68,9 +72,7 @@ for i, url in enumerate(urls):
 
         lib = []
 
-    # run just 5000 for now
-    if i == 5000: 
-        break
+    
 
 
 

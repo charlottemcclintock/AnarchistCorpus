@@ -77,9 +77,8 @@ text_data = []
 for index, row in df.iterrows():
     try:
         tokens = prepare_text_for_lda(row['text'])
-        if random.random() > .99:
-            text_data.append(tokens)
-        print(f"Prepared {row['title']}.")
+        text_data.append(tokens)
+        print(f"Prepared {row['title']}")
     except: 
         print('Line preparation error.')
 

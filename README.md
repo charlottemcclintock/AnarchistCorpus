@@ -9,6 +9,7 @@ thanks to the Anarchist Library ([theanarchistlibrary.org/](https://theanarchist
 - [x] tf-idf - what words are most significant in a given text?
 - [x] LDA - what topic clusters can I find across documents?
 - [x] recommendation engine based on tf-idf
+- [x] NER - what entities appear most often? who or what is being talked about
 - [ ] sentiment analysis - look at 10 most + and - docs overall
-- [ ] NER - what entities appear most often? who or what is being talked about
 - [ ] all code to classes/methods?
+- [ ] parallelize code to run faster?
