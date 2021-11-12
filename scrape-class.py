@@ -12,15 +12,12 @@ import re # regular expressions
 import json # for writing json
 
 
-
+# DEFINE A CLASS
 class AnarchistScraper():
 
-    def __init__(self, mode='debug'):
+    def __init__(self, debug=True):
 
-        self.mode = mode 
-
-        self.get_urls()
-        self.get_texts()
+        self.debug = debug 
 
     '''
     STEP ONE: get lists of urls 
@@ -47,7 +44,7 @@ class AnarchistScraper():
         lib = []
         for i, url in enumerate(urls): 
 
-            if self.mode == 'debug': 
+            if self.debug == True: 
                 if i > 1000: 
                     break 
 
@@ -82,10 +79,14 @@ class AnarchistScraper():
                 print(f"Bango! You've reached {i} documents. Pat yourself on the back. That's pretty cool.")
 
                 lib = []
+        
+    def scrape(self): 
+        self.get_urls()
+        self.get_texts()    
 
 
 if __name__ == '__main__': 
-    AnarchistScraper()
+    AnarchistScraper().scrape()
 
 
 
