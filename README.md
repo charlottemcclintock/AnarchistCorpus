@@ -1,5 +1,9 @@
 # AnarchistCorpus
 
+## Charlotte
+There might be a couple better ways to scrape data. There is a [torrent](https://bookshelf.theanarchistlibrary.org/library/the-anarchist-library-on-torrent) avaible which provides an ISO. There is also a zim archive [here](https://bookshelf.theanarchistlibrary.org/library/librarian-mirrors-of-library-en). You could probably scrape the RSS feed if you wanted more structured data. 
+
+
 web scraping texts from the Anarchist Library for some natural language processing exploration
 
 thanks to the Anarchist Library ([theanarchistlibrary.org/](https://theanarchistlibrary.org/special/index)) for compiling texts and having an incredible well organized site!
